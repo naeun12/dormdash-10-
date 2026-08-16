@@ -1,0 +1,802 @@
+/* Specific Styles for Recommended Dorms */
+.offcanvas {
+    transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.offcanvas-title small-caps {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    opacity: 0.8;
+}
+
+.small-caps {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Dorm Card Hover Effects */
+.dorm-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dorm-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Shadow Inner for Image */
+.shadow-inner {
+    box-shadow: inset 0 0 40px rgba(0, 0, 0, 0.1);
+}
+
+/* Custom Occupancy Colors (Soft background) */
+.bg-primary.bg-opacity-10 {
+    background-color: rgba(0, 60, 135, 0.1) !important;
+    color: #003C87 !important;
+}
+
+.bg-danger.bg-opacity-10 {
+    background-color: rgba(220, 53, 69, 0.1) !important;
+    color: #dc3545 !important;
+}
+
+.bg-warning.bg-opacity-10 {
+    background-color: rgba(255, 193, 7, 0.1) !important;
+    color: #856404 !important;
+}
+
+/* Utilities */
+.transition-all {
+    transition: all 0.2s ease;
+}
+
+.object-fit-cover {
+    object-fit: cover;
+}
+
+.rounded-5 {
+    border-radius: 2rem !important;
+}
+
+.transition-all {
+    transition: all 0.2s ease-in-out;
+}
+
+/* Tag Buttons Styling */
+.tag-button {
+    font-size: 0.85rem;
+    font-weight: 600;
+    border: 1.5px solid transparent;
+}
+
+.tag-inactive {
+    background-color: #f8f9fa;
+    color: #5c636a;
+    border-color: #e9ecef;
+}
+
+.tag-inactive:hover {
+    background-color: #e9ecef;
+    color: #212529;
+}
+
+.tag-active {
+    background-color: #003C87 !important;
+    color: white !important;
+    transform: scale(1.05);
+}
+
+.tag-active-orange {
+    background-color: #FC7D07 !important;
+    color: white !important;
+    transform: scale(1.05);
+}
+
+.shadow-orange {
+    box-shadow: 0 10px 20px rgba(252, 125, 7, 0.3);
+}
+
+.shadow-orange:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 25px rgba(252, 125, 7, 0.4);
+}
+
+.form-control:focus,
+.form-select:focus {
+    background-color: #f0f7ff;
+}
+
+/* Custom Scrollbar for Tags if needed */
+.flex-wrap {
+    max-height: 250px;
+    overflow-y: auto;
+    padding-right: 5px;
+}
+
+.flex-wrap::-webkit-scrollbar {
+    width: 4px;
+}
+
+.flex-wrap::-webkit-scrollbar-thumb {
+    background: #e0e0e0;
+    border-radius: 10px;
+}
+
+.hero-section {
+    perspective: 1000px;
+}
+
+.fw-extrabold {
+    font-weight: 800;
+}
+
+.tracking-tight {
+    letter-spacing: -1px;
+}
+
+/* Glow effect for Brand Color */
+.glow-text {
+    text-shadow: 0 0 20px rgba(252, 125, 7, 0.4);
+}
+
+/* Glassmorphism Step Cards */
+.step-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.4s ease;
+}
+
+.step-number {
+    width: 32px;
+    height: 32px;
+    background-color: #003C87;
+    /* Brand Blue */
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.highlight-step {
+    border-color: #FC7D07;
+    /* Brand Orange */
+    box-shadow: 0 10px 25px rgba(252, 125, 7, 0.2) !important;
+}
+
+.highlight-step .step-number {
+    background-color: #FC7D07;
+}
+
+/* Animations */
+.animate-fade-in {
+    animation: fadeInUp 0.8s ease forwards;
+}
+
+.animate-fade-in-delayed {
+    animation: fadeInUp 0.8s ease 0.3s forwards;
+    opacity: 0;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Vue Transitions */
+.slide-up-enter-active {
+    transition: all 0.5s ease-out;
+}
+
+.slide-up-enter-from {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.fade-enter-active {
+    transition: opacity 1s ease;
+}
+
+.fade-enter-from {
+    opacity: 0;
+}
+.actions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 12px;
+}
+
+/* Action Card Styling */
+.action-card {
+    background: none;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 12px 8px;
+    border-radius: 16px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.action-card:hover {
+    background-color: #f8f9fa;
+    transform: translateY(-5px);
+}
+
+.action-card:active {
+    transform: scale(0.95);
+}
+
+/* Icon Container */
+.icon-wrapper {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 14px;
+    font-size: 1.4rem;
+    margin-bottom: 8px;
+    transition: 0.3s;
+}
+
+.action-label {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #444;
+}
+
+/* Tracking Wider for Title */
+.tracking-wider {
+    letter-spacing: 1px;
+}
+
+/* Dynamic Soft Colors based on Branding */
+.text-blue {
+    color: #003C87;
+}
+
+.bg-blue-soft {
+    background-color: rgba(0, 60, 135, 0.1);
+}
+
+.text-orange {
+    color: #FC7D07;
+}
+
+.bg-orange-soft {
+    background-color: rgba(252, 125, 7, 0.1);
+}
+
+.bg-success-soft {
+    background-color: rgba(25, 135, 84, 0.1);
+}
+
+.bg-info-soft {
+    background-color: rgba(13, 202, 240, 0.1);
+}
+
+.bg-purple-soft {
+    background-color: rgba(111, 66, 193, 0.1);
+}
+
+.text-purple {
+    color: #6f42c1;
+}
+
+/* Notification Dot */
+.notification-dot {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    width: 8px;
+    height: 8px;
+    background-color: #dc3545;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 480px) {
+    .actions-grid {
+        grid-template-columns: repeat(3, 1fr);
+        /* 3 items per row on very small screens */
+    }
+
+    .icon-wrapper {
+        width: 45px;
+        height: 45px;
+        font-size: 1.2rem;
+    }
+}
+/* Branding Colors */
+.text-dash-orange {
+    color: #FC7D07 !important;
+}
+
+.text-dash-blue {
+    color: #003C87 !important;
+}
+
+.bg-blue-soft {
+    background-color: rgba(0, 60, 135, 0.1);
+}
+
+.btn-dash-blue {
+    background-color: #003C87;
+    color: white;
+    border: none;
+    transition: 0.3s;
+}
+
+.btn-dash-blue:hover {
+    background-color: #002c63;
+    transform: translateY(-2px);
+    color: white;
+}
+
+/* Section & Layout */
+.map-section {
+    background-color: #f8faff;
+    min-height: 80vh;
+}
+
+.rounded-5 {
+    border-radius: 2rem !important;
+}
+
+.tracking-wider {
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+/* Explorer Badge */
+.explorer-badge {
+    background-color: white;
+    color: #444;
+    font-weight: 700;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+/* Map Card Styling */
+.map-container {
+    transition: box-shadow 0.4s ease;
+    border: 1px solid rgba(0, 60, 135, 0.05) !important;
+}
+
+.icon-box {
+    width: 54px;
+    height: 54px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+/* Map Frame */
+.map-frame {
+    background-color: #e9ecef;
+    position: relative;
+}
+
+/* Floating UI Elements */
+.map-controls {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: white;
+    border-radius: 12px;
+    z-index: 10;
+    overflow: hidden;
+}
+
+.control-item {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.2s;
+    color: #333;
+}
+
+.control-item:hover {
+    background-color: #f8f9fa;
+    color: #003C87;
+}
+
+.map-floating-label {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 60, 135, 0.9);
+    backdrop-filter: blur(10px);
+    color: white;
+    padding: 10px 24px;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    z-index: 10;
+}
+
+/* Animations */
+.pulse-dot {
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+    background-color: #28a745;
+    border-radius: 50%;
+    margin-right: 6px;
+    animation: pulse-live 2s infinite;
+}
+
+@keyframes pulse-live {
+    0% {
+        box-shadow: 0 0 0 0 rgba(40, 167, 69, 0.6);
+    }
+
+    70% {
+        box-shadow: 0 0 0 12px rgba(40, 167, 69, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(40, 167, 69, 0);
+    }
+}
+
+.animate-bounce {
+    animation: subtle-bounce 3s infinite ease-in-out;
+}
+
+@keyframes subtle-bounce {
+
+    0%,
+    100% {
+        transform: translate(-50%, 0);
+    }
+
+    50% {
+        transform: translate(-50%, -10px);
+    }
+}
+
+/* Surigao specific accents */
+.btn-outline-dash-orange {
+    border: 2px solid #FC7D07;
+    color: #FC7D07;
+    font-weight: 600;
+}
+
+.btn-outline-dash-orange:hover {
+    background-color: #FC7D07;
+    color: white;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+    .map-frame {
+        height: 400px !important;
+    }
+
+    .display-5 {
+        font-size: 2rem;
+    }
+
+    .card-header {
+        text-align: center;
+        justify-content: center !important;
+    }
+}
+/* Bento Grid Styles */
+.bento-item {
+    border-radius: 24px !important;
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.bento-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15) !important;
+}
+
+.bento-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.6s ease;
+}
+
+.bento-item:hover .bento-image {
+    transform: scale(1.1);
+}
+
+.bento-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0, 10, 30, 0.9) 0%, rgba(0, 0, 0, 0) 70%);
+    z-index: 1;
+}
+
+.bento-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+/* Specific Card Heights */
+.featured-card {
+    min-height: 420px;
+}
+
+.secondary-card {
+    height: 210px;
+}
+
+.mini-card {
+    height: 195px;
+}
+
+/* Custom UI Elements */
+.glass-badge {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(8px);
+    color: white;
+    font-weight: 500;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.rating-pill {
+    background: #FC7D07;
+    color: white;
+    padding: 4px 12px;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+.btn-glass-sm {
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+    padding: 2px 12px;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    backdrop-filter: blur(4px);
+}
+
+.mini-rating {
+    color: #FC7D07;
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+
+.text-dash-orange {
+    color: #FC7D07;
+}
+
+.text-dash-blue {
+    color: #003C87;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 991px) {
+    .featured-card {
+        min-height: 350px;
+    }
+
+    .secondary-card,
+    .mini-card {
+        height: 200px;
+    }
+}
+/* Container for Fixed Positioning */
+.fixed-actions-container {
+    position: fixed;
+    bottom: 30px;
+    right: 25px;
+    z-index: 1100;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+/* Primary Recommended Button (Blue to Navy Gradient) */
+.btn-dash-float {
+    background: linear-gradient(135deg, #003C87 0%, #002554 100%);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 12px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.btn-dash-float:hover {
+    transform: scale(1.05) translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 60, 135, 0.4) !important;
+    background: linear-gradient(135deg, #004fb3 0%, #003C87 100%);
+}
+
+/* Secondary Preference Button (Orange Soft) */
+.btn-dash-sub-float {
+    background: white;
+    color: #FC7D07;
+    border: 2px solid #FC7D07;
+    border-radius: 50px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.btn-dash-sub-float:hover {
+    background: #FC7D07;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* Icons & Text Styling */
+.float-content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.float-content i {
+    font-size: 1.2rem;
+}
+
+/* Mobile Adjustments (Para dili kaayo dako sa screen) */
+@media (max-width: 576px) {
+    .btn-text {
+        display: none;
+        /* I-hide ang text sa mobile, icon nalang ibilin */
+    }
+
+    .btn-dash-float,
+    .btn-dash-sub-float {
+        width: 55px;
+        height: 55px;
+        padding: 0;
+        border-radius: 50%;
+        /* Himoong circular sa mobile */
+    }
+
+    .float-content {
+        justify-content: center;
+        gap: 0;
+    }
+
+    .fixed-actions-container {
+        right: 15px;
+        bottom: 20px;
+    }
+}
+
+/* Animation classes (Optional: requires animate.css or you can remove them) */
+.animate__animated {
+    animation-duration: 0.8s;
+}
+/* Container and Card */
+.welcome-container {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.welcome-card {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-radius: 30px !important;
+    position: relative;
+}
+
+.accent-bar {
+    height: 6px;
+    background: linear-gradient(90deg, #003C87 0%, #FC7D07 100%);
+    width: 100%;
+}
+
+/* Success Icon */
+.success-icon-wrapper {
+    font-size: 4rem;
+    color: #28a745;
+    animation: scaleIn 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* Preference Pills */
+.preference-pill {
+    background: #f8faff;
+    padding: 15px;
+    border-radius: 20px;
+    border: 1px solid rgba(0, 60, 135, 0.05);
+    transition: 0.3s;
+}
+
+.preference-pill:hover {
+    background: #ffffff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    transform: translateY(-3px);
+}
+
+.preference-pill small {
+    font-size: 0.65rem;
+    letter-spacing: 1px;
+}
+
+/* Brand Colors */
+.text-dash-blue {
+    color: #003C87;
+}
+
+.text-dash-orange {
+    color: #FC7D07;
+}
+
+/* Animations */
+@keyframes scaleIn {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.animate__infinite {
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 576px) {
+    .welcome-card {
+        border-radius: 20px !important;
+        margin: 0 10px;
+    }
+
+    .h2 {
+        font-size: 1.5rem;
+    }
+
+    .preference-pill span {
+        font-size: 0.9rem;
+    }
+}

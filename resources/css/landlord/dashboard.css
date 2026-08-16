@@ -1,0 +1,410 @@
+:root {
+    --primary-blue: #003C87;
+    --accent-orange: #FC7D07;
+    --text-muted: #94a3b8;
+    --border-soft: #e2e8f0;
+}
+
+/* Main Card */
+.stats-filter-card {
+    background: #ffffff;
+    border-radius: 16px;
+    border-left: 6px solid #003C87 !important;
+}
+
+/* Labels */
+.nav-label {
+    font-size: 0.65rem;
+    font-weight: 800;
+    color: #94a3b8;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* Avatar Box */
+.avatar-icon-box {
+    background: #003C87;
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 14px;
+    box-shadow: 0 4px 10px rgba(0, 60, 135, 0.2);
+}
+
+/* Modern Inputs & Buttons */
+.filter-group {
+    min-width: 200px;
+}
+
+.input-with-icon {
+    position: relative;
+}
+
+.input-with-icon i {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #003C87;
+}
+
+.modern-input {
+    padding-left: 38px;
+    height: 45px;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.modern-input:focus {
+    border-color: #003C87;
+    box-shadow: 0 0 0 3px rgba(0, 60, 135, 0.1);
+}
+
+.modern-dropdown-btn {
+    height: 45px;
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    color: #1e293b;
+    font-weight: 600;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.modern-dropdown-btn:hover {
+    background: #f1f5f9;
+}
+
+/* Download Button (Orange Accent) */
+.download-btn {
+    height: 45px;
+    background-color: var(--accent-orange);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-weight: 700;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(252, 125, 7, 0.25);
+}
+
+.download-btn:hover {
+    background-color: #e66f00;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(252, 125, 7, 0.35);
+}
+
+.download-btn.disabled {
+    background-color: #cbd5e1;
+    box-shadow: none;
+}
+
+/* Responsive adjust */
+@media (max-width: 768px) {
+    .stats-filter-card {
+        border-left: none !important;
+        border-top: 6px solid #003C87 !important;
+    }
+}
+/* Color Variables based on your Brand */
+
+.stat-link-wrapper {
+    text-decoration: none !important;
+    display: block;
+}
+
+.modern-stat-card {
+    position: relative;
+    border-radius: var(--card-radius);
+    padding: 2rem;
+    overflow: hidden;
+    border: none;
+    transition: all var(--transition-speed) cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    flex-direction: column;
+    min-height: 180px;
+}
+
+/* Background Variations */
+.bg-brand-blue {
+    background: linear-gradient(135deg, #003C87 0%, #002b61 100%);
+    box-shadow: 0 10px 30px rgba(0, 60, 135, 0.25);
+}
+
+.bg-brand-orange {
+    background: linear-gradient(135deg, #FC7D07 0%, #e66a00 100%);
+    box-shadow: 0 10px 30px rgba(252, 125, 7, 0.25);
+}
+
+/* Glassmorphism Shine Effect */
+.glass-shine {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0) 50%);
+    pointer-events: none;
+}
+
+.card-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    z-index: 2;
+}
+
+/* Typography */
+.stat-category {
+    font-size: 0.7rem;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    color: rgba(253, 253, 253, 0.6);
+    text-transform: uppercase;
+}
+
+.stat-title {
+    font-weight: 600;
+    margin: 4px 0;
+    color: #ffffff;
+}
+
+.stat-number {
+    font-weight: 800;
+    font-size: 3rem;
+    margin: 0;
+    line-height: 1.1;
+}
+
+/* Icon Styling */
+.icon-blob {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(8px);
+    width: 64px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+    font-size: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Bottom Action Bar */
+.card-action-bar {
+    margin-top: auto;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: gap 0.2s ease;
+}
+
+/* Hover States */
+.modern-stat-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.stat-link-wrapper:hover .card-action-bar {
+    gap: 12px;
+}
+
+.stat-link-wrapper:hover .icon-blob {
+    background: rgba(255, 255, 255, 0.25);
+    transform: rotate(-5deg);
+}
+/* Container Card Styling */
+.modern-chart-card {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(226, 232, 240, 0.8);
+    flex: 1 1 45%;
+    min-width: 320px;
+    transition: transform 0.3s ease;
+}
+
+.modern-chart-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Header with Icon Box */
+.chart-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border-bottom: 1px solid #f1f5f9;
+    padding-bottom: 15px;
+    margin-bottom: 5px;
+}
+
+.header-icon-box {
+    width: 40px;
+    height: 40px;
+    background: #003C87;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    box-shadow: 0 4px 10px rgba(0, 60, 135, 0.2);
+}
+
+.header-icon-box.icon-orange {
+    background: #FC7D07;
+    box-shadow: 0 4px 10px rgba(252, 125, 7, 0.2);
+}
+
+/* Typography Overrides */
+.nav-label {
+    font-size: 0.6rem;
+    font-weight: 800;
+    color: #94a3b8;
+    letter-spacing: 1.2px;
+    display: block;
+    text-transform: uppercase;
+}
+
+/* Modern Legend Rows */
+.legend-row {
+    background: #f8fafc;
+    transition: background 0.2s;
+}
+
+.legend-row:hover {
+    background: #f1f5f9;
+}
+
+.legend-indicator {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+
+.label-text {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #475569;
+}
+
+.label-value {
+    font-size: 0.8rem;
+    font-weight: 800;
+    color: #003C87;
+}
+
+/* Responsive adjustment */
+@media (max-width: 576px) {
+    .chart-body {
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+
+    .modern-legend {
+        width: 100%;
+    }
+}
+/* Container Card */
+.modern-table-card {
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(226, 232, 240, 0.8);
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.table-card-link {
+    text-decoration: none !important;
+    color: inherit;
+    display: block;
+}
+
+.table-card-link:hover .modern-table-card {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+/* Color Accents */
+.card-top-accent {
+    height: 4px;
+    width: 100%;
+}
+
+.text-brand-blue { color: #003C87; }
+.text-brand-orange { color: #FC7D07; }
+.bg-brand-blue { background-color: #003C87; }
+.bg-brand-orange { background-color: #FC7D07; }
+
+/* Table Styling */
+.table-custom {
+    margin-bottom: 0;
+}
+
+.table-custom thead th {
+    background: #f8fafc;
+    border: none;
+    color: #94a3b8;
+    font-size: 0.7rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 12px 15px;
+}
+
+.table-custom tbody td {
+    padding: 16px 15px;
+    border-bottom: 1px solid #f1f5f9;
+    vertical-align: middle;
+    font-size: 0.9rem;
+}
+
+.table-custom tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* Room Tags */
+.room-tag {
+    background: rgba(0, 60, 135, 0.08);
+    color: #003C87;
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 0.8rem;
+}
+
+.orange-tag {
+    background: rgba(252, 125, 7, 0.1);
+    color: #FC7D07;
+}
+
+/* Status Pill */
+.status-pill {
+    font-size: 0.65rem;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 20px;
+    text-transform: uppercase;
+}
+
+.pill-blue {
+    background: #e0f2fe;
+    color: #003C87;
+}

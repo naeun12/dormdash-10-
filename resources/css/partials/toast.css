@@ -1,0 +1,130 @@
+.premium-toast-container {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: auto;
+    min-width: 320px;
+    max-width: 450px;
+    z-index: 9999;
+    pointer-events: none;
+    opacity: 0;
+    transform: translateX(40px);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.premium-toast-container.show {
+    opacity: 1;
+    transform: translateX(0);
+    pointer-events: auto;
+}
+
+.premium-toast-card {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    border: 1px solid #e2e8f0;
+    position: relative;
+    overflow: hidden;
+}
+
+.fw-700 {
+    font-weight: 700;
+}
+
+.toast-message {
+    font-size: 0.95rem;
+    color: #1e293b;
+}
+
+/* Left Accent Borders */
+.border-accent-success {
+    border-left: 6px solid #10b981 !important;
+}
+
+.border-accent-danger {
+    border-left: 6px solid #ef4444 !important;
+}
+
+.border-accent-warning {
+    border-left: 6px solid #f59e0b !important;
+}
+
+.border-accent-info {
+    border-left: 6px solid #3b82f6 !important;
+}
+
+/* Icon Styling */
+.icon-box {
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+}
+
+/* Custom Close Button */
+.btn-close-custom {
+    background: transparent;
+    border: none;
+    color: #94a3b8;
+    font-size: 1.5rem;
+    line-height: 1;
+    padding: 0;
+    transition: color 0.2s;
+}
+
+.btn-close-custom:hover {
+    color: #64748b;
+}
+
+/* Progress Bar Logic */
+.toast-progress-bar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 4px;
+    width: 100%;
+    opacity: 0.4;
+    animation: shrink-progress 3s linear forwards;
+}
+
+@keyframes shrink-progress {
+    from {
+        width: 100%;
+    }
+
+    to {
+        width: 0%;
+    }
+}
+
+/* Colors matching your SaaS theme */
+.text-success {
+    color: #10b981 !important;
+}
+
+.text-danger {
+    color: #ef4444 !important;
+}
+
+.text-warning {
+    color: #f59e0b !important;
+}
+
+.text-info {
+    color: #3b82f6 !important;
+}
+
+.bg-success {
+    background-color: #10b981 !important;
+}
+
+.bg-danger {
+    background-color: #ef4444 !important;
+}
+
+.bg-warning {
+    background-color: #f59e0b !important;
+}
+
+.bg-info {
+    background-color: #3b82f6 !important;
+}

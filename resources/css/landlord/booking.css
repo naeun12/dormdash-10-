@@ -1,0 +1,30 @@
+
+/* Premium Buttons using your brand colors */
+.btn-premium-primary {
+    background: linear-gradient(135deg, #003C87, #0056b3);
+    color: white;
+    border: none;
+    transition: 0.3s;
+}
+
+.btn-premium-primary:hover {
+    background: linear-gradient(135deg, #002a5e, #003C87);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 60, 135, 0.3);
+}
+
+.btn-premium-orange {
+    background:#FC7D07;
+    color: white;
+    border: none;
+}
+
+/* Updated Filter Bar Border */
+.filter-bar-container {
+    border: 1px solid rgba(0, 60, 135, 0.2) !important;
+}
+
+.filter-bar-container:focus-within {
+    border-color: #003C87 !important;
+    box-shadow: 0 0 0 4px rgba(0, 60, 135, 0.1) !important;
+}

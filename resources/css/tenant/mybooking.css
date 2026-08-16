@@ -1,0 +1,161 @@
+/* Solid Blue: #003C87 | Solid Orange: #fd7e14 */
+
+.bg-solid-blue {
+    background-color: #003C87;
+}
+
+.text-blue {
+    color: #003C87;
+}
+
+.border-blue-subtle {
+    border-color: rgba(13, 110, 253, 0.1) !important;
+}
+
+.modern-booking-card {
+    border: none;
+    background: #fff;
+    min-height: 800px;
+}
+
+/* Left Sidebar Styles */
+.profile-img-container {
+    height: 240px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 24px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.border-white-opacity {
+    border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.btn-cancel-modern {
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    color: white;
+    transition: 0.3s;
+}
+
+.btn-cancel-modern:hover {
+    background: #dc3545;
+    border-color: #dc3545;
+    color: white;
+}
+
+/* Right Content Styles */
+.dorm-header-img {
+    height: 320px;
+}
+
+.price-tag-floating {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background: white;
+    padding: 10px 20px;
+    border-radius: 15px;
+    font-weight: 900;
+    color: #003C87;
+    font-size: 1.2rem;
+}
+
+.bg-soft-blue {
+    background-color: #f8fbff;
+}
+
+.border-start-orange {
+    border-left: 6px solid #fd7e14;
+}
+
+/* GCash Card Design */
+.gcash-card {
+    background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+    box-shadow: 0 12px 24px rgba(0, 123, 255, 0.3);
+}
+
+.card-wave {
+    position: absolute;
+    bottom: -20px;
+    right: -20px;
+    width: 100px;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+}
+
+.upload-zone {
+    border: 2px dashed #ccd3d9;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    background: #fafbfc;
+}
+
+.upload-zone:hover {
+    border-color: #003C87;
+    background-color: #f0f7ff;
+}
+
+.upload-icon-circle {
+    width: 55px;
+    height: 55px;
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Premium Buttons */
+.btn-orange-solid {
+    background-color: #fd7e14;
+    color: white;
+    border: none;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.btn-orange-solid:hover {
+    background-color: #e86c00;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(253, 126, 20, 0.4);
+}
+
+/* Animations */
+.animate-fade-in {
+    animation: fadeIn 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fw-black {
+    font-weight: 900;
+}
+
+.tracking-wider {
+    letter-spacing: 2px;
+}
+
+@media (max-width: 768px) {
+    .dorm-header-img {
+        height: 200px;
+    }
+
+    .modern-booking-card {
+        border-radius: 0;
+    }
+}
+

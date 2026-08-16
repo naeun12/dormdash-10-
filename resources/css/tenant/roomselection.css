@@ -1,0 +1,17 @@
+.hover-lift {
+    transition: transform 0.25s ease, shadow 0.25s ease;
+}
+
+.hover-lift:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.12) !important;
+}
+
+.transition-all {
+    transition: all 0.3s ease;
+}
+
+.glass-effect {
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}

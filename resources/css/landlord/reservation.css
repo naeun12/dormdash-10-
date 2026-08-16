@@ -1,0 +1,72 @@
+/* Layout Styling */
+.filter-container {
+    background-color: transparent;
+}
+
+/* Search Box Focus */
+.search-box {
+    border: 1.5px solid #dee2e6 !important;
+    transition: border-color 0.3s ease;
+    min-width: 200px;
+}
+
+.search-box:focus-within {
+    border-color: #003C87 !important;
+    /* Brand Blue */
+}
+
+/* Dropdowns Styling */
+.custom-select {
+    width: auto !important;
+    min-width: 130px;
+    border: 1.5px solid #dee2e6 !important;
+    font-size: 0.875rem !important;
+    padding: 0.4rem 2rem 0.4rem 0.75rem !important;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.custom-select:focus {
+    border-color: #003C87 !important;
+    box-shadow: 0 0 0 0.2rem rgba(0, 60, 135, 0.1) !important;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .filter-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .custom-select {
+        width: 100% !important;
+    }
+}
+/* Empty State Styling */
+.empty-state-container {
+    height: 300px;
+    /* Mas taas gamay para naay "presence" sa page */
+    transition: all 0.3s ease;
+}
+
+.icon-wrapper i {
+    color: #003C87;
+    /* Imong Brand Blue */
+    opacity: 0.2;
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
+}
+
+/* Optional: Subtle animation para sa icon */
+.empty-state-container:hover .icon-wrapper i {
+    opacity: 0.4;
+    transform: translateY(-5px);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.empty-state-container h5 {
+    letter-spacing: -0.5px;
+}
+
+.empty-state-container p {
+    max-width: 250px;
+}

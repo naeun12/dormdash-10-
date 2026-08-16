@@ -1,0 +1,148 @@
+/* Solid Blue: #0d6efd | Solid Orange: #fd7e14 */
+
+.bookings-wrapper {
+    background-color: #fcfcfd;
+    min-height: 100vh;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Header */
+.booking-glass-header {
+    background: white;
+    border-radius: 20px;
+    border-bottom: 4px solid #0d6efd;
+    /* Solid Blue Accent */
+}
+
+/* Empty State */
+.empty-bookings-card {
+    border: 1px dashed #dee2e6;
+}
+
+.empty-icon-bg {
+    width: 80px;
+    height: 80px;
+    background-color: #fff4ec;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+}
+
+.text-orange {
+    color: #fd7e14;
+}
+
+/* Booking Cards */
+.booking-card-modern {
+    background-color: white;
+    border-radius: 24px;
+    border: 1px solid #f1f1f1;
+    transition: all 0.3s ease;
+}
+
+.booking-card-modern:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08) !important;
+}
+
+.booking-img-main {
+    width: 100%;
+    height: 100%;
+    min-height: 180px;
+    object-fit: cover;
+}
+
+.status-overlay {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    z-index: 2;
+}
+
+.room-badge {
+    background-color: #e7f1ff;
+    color: #0d6efd;
+    padding: 6px 14px;
+    border-radius: 12px;
+}
+
+/* Info Items */
+.info-item i {
+    font-size: 1.2rem;
+}
+
+.text-blue {
+    color: #0d6efd;
+}
+
+/* Buttons */
+.btn-orange-premium {
+    background-color: #fd7e14;
+    color: white;
+    border: none;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.btn-orange-premium:hover {
+    background-color: #e86c00;
+    transform: translateY(-2px);
+    color: white;
+}
+
+.btn-blue-premium {
+    background-color: #0d6efd;
+    color: white;
+    font-weight: 600;
+}
+
+.bg-light-soft {
+    background-color: #f8f9fa;
+}
+
+.btn-view-booking {
+    background-color: white;
+    border: 2px solid #0d6efd;
+    color: #0d6efd;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.btn-view-booking:hover {
+    background-color: #0d6efd;
+    color: white;
+}
+
+.btn-show-more {
+    background-color: white;
+    border: 1px solid #dee2e6;
+    border-radius: 50px;
+    padding: 10px 30px;
+    font-weight: 600;
+    color: #555;
+    transition: 0.3s;
+}
+
+.btn-show-more:hover {
+    background-color: #0d6efd;
+    color: white;
+    border-color: #0d6efd;
+}
+
+/* Utility */
+.fw-black {
+    font-weight: 900;
+}
+
+@media (max-width: 991px) {
+    .booking-img-main {
+        height: 200px;
+    }
+
+    .col-lg-2 {
+        border-top: 1px solid #eee;
+        border-left: none !important;
+    }
+}

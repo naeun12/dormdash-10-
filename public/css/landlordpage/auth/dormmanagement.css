@@ -1,0 +1,480 @@
+.table-responsive {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.spinner-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.spinner {
+    width: 50px;
+    height: 50px;
+    border: 6px solid #ccc;
+    border-top-color: #3498db;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.table-responsive {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    /* smooth scrolling on iOS */
+    max-width: 100%;
+}
+
+.table-responsive table {
+    min-width: 700px;
+    /* Adjust based on your table's total width */
+}
+
+.file-upload-btn:hover {
+    background: #1AA059;
+    color: #ffffff;
+    transition: all .2s ease;
+    cursor: pointer;
+}
+
+.file-upload-btn:active {
+    border: 0;
+    transition: all .2s ease;
+}
+
+.file-upload-content {
+    display: none;
+    text-align: center;
+}
+
+.file-upload-input {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.image-upload-wrap {
+    margin-top: 20px;
+    border: 4px dashed #4edce2;
+    position: relative;
+}
+
+.image-dropping,
+.image-upload-wrap:hover {
+    background-color: #4edce2;
+    border: 4px dashed #ffffff;
+}
+
+.image-title-wrap {
+    padding: 0 15px 15px 15px;
+    color: #222;
+}
+
+.drag-text {
+    text-align: center;
+}
+
+.drag-text h3 {
+    font-weight: 100;
+    text-transform: uppercase;
+    color: black;
+    padding: 60px 0;
+}
+
+.file-upload-image {
+    max-height: 200px;
+    max-width: 200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.remove-image {
+    width: 200px;
+    margin: 0;
+    color: black;
+    background: #4edce2;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    border-bottom: 4px solid #b02818;
+    transition: all .2s ease;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.remove-image:hover {
+    background: #4edce2;
+    color: black;
+    transition: all .2s ease;
+    cursor: pointer;
+}
+
+.remove-image:active {
+    border: 0;
+    transition: all .2s ease;
+}
+
+.file-upload-input {
+    display: none;
+}
+
+.image-upload-wrap {
+    border: 2px dashed #ddd;
+    padding: 40px;
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.file-upload-content {
+    display: block;
+    margin-top: 20px;
+}
+
+.file-upload-image {
+    max-width: 100%;
+    max-height: 300px;
+    margin: 0 auto;
+    display: block;
+}
+
+.remove-image {
+    background: none;
+    border: none;
+    color: #ff0000;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.image-wrapper {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    /* You can adjust ratio like 1 / 1 for square */
+    overflow: hidden;
+    border-radius: 0.5rem;
+    background-color: #f8f9fa;
+}
+
+.uniform-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+/* Standardize transitions */
+.transition-base {
+    transition: all 0.2s ease-in-out;
+}
+
+.transition-base:hover {
+    transform: translateY(-2px);
+}
+
+/* Custom button white */
+.btn-white {
+    background-color: #fff;
+    color: #475569;
+}
+
+.btn-white:hover {
+    background-color: #f8fafc;
+}
+
+/* Soft background for icons */
+.bg-warning-subtle {
+    background-color: #fffbeb !important;
+}
+
+/* Refine input group merges */
+.input-group-merge .form-control:focus {
+    background-color: #fff !important;
+    border: 1px solid #4f46e5 !important;
+    /* Indigo accent on focus */
+}
+
+.extra-small {
+    font-size: 0.8rem;
+}
+
+/* Remove default select arrows for a cleaner look if desired, 
+   but keeping Bootstrap defaults for stability */
+.form-select,
+.form-control {
+    font-size: 0.875rem;
+}
+
+/* Ensure card layout is clean */
+.card {
+    border: 1px solid #f1f5f9;
+}
+
+/* Table Styles */
+.table thead th {
+    background-color: #f8fafc;
+    border: none;
+    letter-spacing: 0.03em;
+}
+
+.table tbody tr {
+    transition: background-color 0.2s ease;
+}
+
+.table tbody tr:hover {
+    background-color: #f1f5f9;
+}
+
+/* Custom Action Buttons */
+.btn-icon {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    border: none;
+    transition: all 0.2s ease;
+    background-color: transparent;
+}
+
+.btn-view {
+    color: #0d6efd;
+}
+
+.btn-view:hover {
+    background-color: #e7f1ff;
+}
+
+.btn-edit {
+    color: #6366f1;
+}
+
+.btn-edit:hover {
+    background-color: #eef2ff;
+}
+
+.btn-delete {
+    color: #dc3545;
+}
+
+.btn-delete:hover {
+    background-color: #fff1f2;
+}
+
+/* Pagination Override */
+.page-link {
+    color: #475569;
+    background-color: #f8fafc;
+    font-weight: 600;
+}
+
+.page-link:hover:not(:disabled) {
+    background-color: #e2e8f0;
+    color: #1e293b;
+}
+
+.extra-small {
+    font-size: 0.7rem;
+}
+
+/* Badge Tweaks */
+.bg-light {
+    background-color: #f1f5f9 !important;
+}
+/* Mock class for the light-blue background in instructions */
+.bg-light-subtle {
+    background-color: #f0f9ff !important;
+}
+
+.backdrop-blur {
+    backdrop-filter: blur(4px);
+}
+
+.shadow-inner {
+    box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.05);
+}
+
+/* Ensure the map controls are visible and styled cleanly */
+#AddMap :deep(.leaflet-control-zoom) {
+    border: none !important;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1) !important;
+}
+
+#AddMap :deep(.leaflet-bar a) {
+    background-color: white;
+    color: #475569;
+}
+
+.bg-primary-subtle {
+    background-color: #eef2ff !important;
+}
+
+.bg-warning-subtle {
+    background-color: #fffbeb !important;
+}
+
+
+.extra-small {
+    font-size: 0.75rem;
+}
+
+/* Subtle entrance animation for new inputs */
+.animate-in {
+    animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.form-control:focus {
+    border-color: #4f46e5 !important;
+    box-shadow: 0 0 0 4px rgba(79, 70, 229, 0.1) !important;
+}
+
+.extra-small {
+    font-size: 0.75rem;
+}
+
+.letter-spacing-1 {
+    letter-spacing: 0.5px;
+}
+
+.bg-primary-subtle {
+    background-color: #eef2ff !important;
+    color: #4f46e5 !important;
+}
+
+.btn-primary-subtle {
+    background-color: #eef2ff;
+    color: #4f46e5;
+    border: none;
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+.btn-primary-subtle:hover {
+    background-color: #4f46e5;
+    color: white;
+}
+
+.icon-btn {
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.max-height-list {
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.truncate-text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 180px;
+}
+
+.animate-in {
+    animation: fadeInSlide 0.2s ease-out forwards;
+}
+
+@keyframes fadeInSlide {
+    from {
+        opacity: 0;
+        transform: translateX(5px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #4f46e5 !important;
+    box-shadow: 0 0 0 4px rgba(79, 70, 229, 0.1) !important;
+}
+/* Search Bar Focus Effect */
+.custom-search-bar {
+    border: 1px solid #eee;
+    transition: all 0.3s ease;
+}
+
+.custom-search-bar:focus-within {
+    border-color: #4edce2;
+    box-shadow: 0 8px 20px rgba(78, 220, 226, 0.15) !important;
+    transform: translateY(-1px);
+}
+
+/* Icon Overlays for Selects */
+.filter-wrapper .icon-overlay {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 5;
+    pointer-events: none;
+}
+
+/* Clean Select Styling */
+.custom-select {
+    height: 48px;
+    font-size: 0.9rem;
+    color: #444;
+    border: 1px solid #f0f0f0 !important;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.custom-select:hover {
+    background-color: #fafafa;
+    border-color: #4edce2 !important;
+}
+
+/* Placeholder text styling */
+.form-control::placeholder {
+    color: #aaa;
+    font-size: 0.95rem;
+}
+
+/* Smooth Empty State */
+.empty-state-container {
+    background: #fdfdfd;
+    border-radius: 20px;
+    border: 2px dashed #eee;
+}
+

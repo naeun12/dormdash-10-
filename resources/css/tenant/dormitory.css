@@ -1,0 +1,281 @@
+/* DormDash Brand Colors */
+.text-dash-blue {
+    color: #003C87 !important;
+}
+
+.text-dash-orange {
+    color: #FC7D07 !important;
+}
+
+.bg-blue-soft {
+    background-color: rgba(0, 60, 135, 0.08);
+}
+
+/* Header Styling */
+.header-content h2 {
+    color: #1a1a1a;
+    letter-spacing: -0.5px;
+}
+
+.title-divider {
+    height: 4px;
+    width: 60px;
+    background-color: #003C87;
+    border-radius: 10px;
+    /* Gradient look */
+    background: linear-gradient(90deg, #003C87 0%, #FC7D07 100%);
+}
+
+.lead-sm {
+    font-size: 1.05rem;
+    font-weight: 400;
+    opacity: 0.8;
+}
+
+/* Animation (Optional - needs animate.css) */
+.animate__fadeIn {
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 576px) {
+    .display-6 {
+        font-size: 1.75rem;
+    }
+}
+/* Branding & Layout */
+.text-dash-blue {
+    color: #003C87 !important;
+}
+
+.text-dash-orange {
+    color: #FC7D07 !important;
+}
+
+.horizontal-scroll-wrapper {
+    overflow-x: auto;
+    white-space: nowrap;
+    scrollbar-width: none;
+    /* Hide scrollbar for Firefox */
+    -ms-overflow-style: none;
+    /* Hide scrollbar for IE/Edge */
+    border: 1px solid rgba(0, 0, 0, 0.03);
+}
+
+.horizontal-scroll-wrapper::-webkit-scrollbar {
+    display: none;
+    /* Hide scrollbar for Chrome/Safari */
+}
+
+.scroll-content {
+    width: max-content;
+    padding: 5px;
+}
+
+/* Card Styling */
+.watched-dorm-card {
+    width: 18rem;
+    flex-shrink: 0;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+    background: #fff;
+}
+
+.watched-dorm-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0, 60, 135, 0.12) !important;
+}
+
+/* Image Wrap */
+.card-image-wrap {
+    height: 180px;
+    overflow: hidden;
+}
+
+.card-image-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.watched-dorm-card:hover .card-image-wrap img {
+    transform: scale(1.1);
+}
+
+/* Badge Styling */
+.view-count-badge {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(4px);
+    color: #fff;
+    padding: 4px 12px;
+    border-radius: 50px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Button */
+.btn-dash-blue-sm {
+    background-color: #003C87;
+    color: white;
+    border: none;
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 8px;
+    transition: 0.3s;
+}
+
+.btn-dash-blue-sm:hover {
+    background-color: #002b61;
+    transform: scale(1.02);
+}
+
+.x-small {
+    font-size: 0.75rem;
+}/* Custom Colors */
+.bg-primary-soft {
+    background-color: rgba(0, 60, 135, 0.08);
+}
+
+.border-primary-soft {
+    border-color: rgba(0, 60, 135, 0.15) !important;
+}
+
+/* Filter Pills Styling */
+.btn-filter-pill {
+    background: #fff;
+    border: 2px solid #eee;
+    color: #666;
+    border-radius: 50px;
+    padding: 10px 20px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-filter-pill:hover {
+    background: #f8faff;
+    border-color: #003C87;
+    color: #003C87;
+}
+
+.btn-filter-pill.active {
+    background: #003C87;
+    border-color: #003C87;
+    color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 60, 135, 0.2);
+}
+
+/* Floating Select Styling */
+.custom-floating {
+    background: white;
+    border: 1px solid #dee2e6;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.custom-floating select {
+    padding-top: 1.625rem !important;
+    padding-bottom: 0.625rem !important;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.custom-floating label {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #003C87;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Responsive Grid Adjustments */
+@media (max-width: 576px) {
+    .custom-floating label {
+        font-size: 0.65rem;
+    }
+
+    .filter-grid-container {
+        padding: 10px;
+    }
+}
+/* Custom Dashboard Variables */
+.text-dash-blue {
+    color: #003C87;
+}
+
+.bg-dash-blue {
+    background-color: #003C87;
+}
+
+.text-dash-orange {
+    color: #FC7D07;
+}
+
+/* Card Animations & Effects */
+.dorm-main-card {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid rgba(0, 0, 0, 0.05) !important;
+}
+
+.dorm-main-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 60, 135, 0.15) !important;
+}
+
+/* Glassmorphism Effect for Rating */
+.glass-rating {
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Button Styling */
+.btn-dash-blue {
+    background-color: #003C87;
+    color: white;
+    border: none;
+    transition: 0.3s;
+}
+
+.btn-dash-blue:hover {
+    background-color: #FC7D07;
+    /* Swaps to Orange on hover */
+    color: white;
+    transform: scale(1.02);
+}
+
+/* Pagination Adjustments */
+.p-pagination {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page-link:hover {
+    background-color: #FC7D07;
+    color: #003C87;
+}
+
+/* Helper Classes */
+.x-small {
+    font-size: 0.65rem;
+    letter-spacing: 0.5px;
+}

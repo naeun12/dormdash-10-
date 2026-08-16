@@ -1,0 +1,57 @@
+body {
+    background-color: #ec5f00;
+}
+
+.custom-input {
+    padding: 0.8rem 1rem;
+    border-radius: 12px;
+    border: 2px solid #f1f3f5;
+    font-size: 0.95rem;
+    transition: 0.2s;
+}
+
+.custom-input:focus {
+    border-color: #003C87;
+    box-shadow: 0 0 0 4px rgba(0, 60, 135, 0.05);
+    outline: none;
+}
+
+.active-step {
+    background-color: #003C87 !important;
+    border-color: #003C87 !important;
+    color: white !important;
+    box-shadow: 0 0 0 5px rgba(0, 60, 135, 0.1);
+}
+
+.inactive-step {
+    background-color: white !important;
+    border-color: #edf2f7 !important;
+    color: #adb5bd !important;
+}
+
+.otp-input-box {
+    width: 50px;
+    height: 60px;
+    border-radius: 12px;
+    border: 2px solid #edf2f7;
+}
+
+.otp-input-box:focus {
+    border-color: #003C87;
+    box-shadow: 0 4px 10px rgba(0, 60, 135, 0.1);
+}
+
+.upload-area:hover {
+    border-color: #003C87 !important;
+    background-color: #f0f7ff !important;
+}
+
+.register-submit-btn:hover,
+.next-step-btn:hover {
+    background-color: #FC7D07 !important;
+    transform: translateY(-2px);
+}
+
+.transition-all {
+    transition: all 0.3s ease;
+}

@@ -1,0 +1,63 @@
+/* Container styling */
+.pagination-container {
+    background: #ffffff;
+    border: 1px solid var(--border-soft);
+    border-radius: 50px;
+    /* Pill shape */
+}
+
+/* Nav Buttons (Prev/Next) */
+.btn-nav {
+    border: none;
+    background: #f1f5f9;
+    color: #475569;
+    padding: 8px 18px;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 0.85rem;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.btn-nav:hover:not(:disabled) {
+    background: var(--primary-blue);
+    color: white;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 10px rgba(0, 60, 135, 0.2);
+}
+
+.btn-nav:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    background: #f8fafc;
+}
+
+/* Page Indicator Styling */
+.page-indicator {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #1e293b;
+    display: flex;
+    align-items: center;
+}
+
+.badge-page {
+    background: var(--primary-blue);
+    color: white;
+    padding: 4px 12px;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    font-weight: 800;
+    box-shadow: 0 2px 6px rgba(0, 60, 135, 0.15);
+}
+
+.current-text,
+.total-text {
+    letter-spacing: 0.3px;
+}
+
+/* Remove default Bootstrap focus outlines */
+.page-link:focus {
+    box-shadow: none;
+}

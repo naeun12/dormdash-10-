@@ -1,0 +1,251 @@
+.glass-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    animation: fadeInScale 0.8s ease-out;
+}
+
+/* 2. Modern Brand Buttons */
+.btn-modern {
+    padding: 14px 35px;
+    border-radius: 50px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+}
+
+/* Brand Blue Button */
+.btn-brand-blue {
+    background: #003C87;
+    color: #ffffff !important;
+    box-shadow: 0 8px 20px rgba(0, 60, 135, 0.3);
+}
+
+.btn-brand-blue:hover {
+    transform: translateY(-3px);
+    background: #002a5e;
+    box-shadow: 0 12px 25px rgba(0, 60, 135, 0.5);
+}
+
+/* Brand Orange Button */
+.btn-brand-orange {
+    background: #FC7D07;
+    color: #ffffff !important;
+    box-shadow: 0 8px 20px rgba(252, 125, 7, 0.3);
+}
+
+.btn-brand-orange:hover {
+    transform: translateY(-3px);
+    background: #e06e05;
+    box-shadow: 0 12px 25px rgba(252, 125, 7, 0.5);
+}
+
+/* 3. Decorative Divider */
+.divider-brand {
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(to right, #003C87, #FC7D07);
+    border-radius: 10px;
+}
+
+/* 4. Animations */
+.hero-bg-zoom {
+    animation: slowZoom 20s infinite alternate;
+}
+
+@keyframes slowZoom {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.15);
+    }
+}
+
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.tracking-widest {
+    letter-spacing: 3px;
+}
+        /* Brand Colors */
+        .color-blue {
+            color: #003C87;
+        }
+    
+        .color-orange {
+            color: #FC7D07;
+        }
+    
+        /* Card Styling */
+        .benefit-card {
+            background: #ffffff;
+            transition: all 0.3s ease-in-out;
+            border-bottom: 4px solid transparent !important;
+        }
+    
+        .benefit-card:hover {
+            transform: translateY(-10px);
+            border-bottom: 4px solid #FC7D07 !important;
+            /* Brand Orange highlight on hover */
+        }
+    
+        /* Icon Box */
+        .icon-box {
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(0, 60, 135, 0.05);
+            border-radius: 15px;
+            font-size: 1.75rem;
+            transition: 0.3s;
+        }
+    
+        .benefit-card:hover .icon-box {
+            background: #003C87;
+            color: #fff !important;
+        }
+    
+        /* Title Divider */
+        .divider-brand {
+            width: 60px;
+            height: 4px;
+            background: linear-gradient(to right, #003C87, #FC7D07);
+            border-radius: 2px;
+        }
+    
+        /* Text Adjustments */
+        .text-muted.small {
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+                  .footer-link {
+                      color: rgba(255, 255, 255, 0.8);
+                      text-decoration: none;
+                      transition: all 0.3s ease;
+                  }
+        
+                  .footer-link:hover {
+                      color: #FC7D07;
+                      padding-left: 5px;
+                  }
+        
+                  .social-icon {
+                      width: 40px;
+                      height: 40px;
+                      display: flex;
+                      justify-content: center;
+                      background: rgba(255, 255, 255, 0.1);
+                      color: white;
+                      border-radius: 50%;
+                      text-decoration: none;
+                      transition: 0.3s;
+                  }
+        
+                  .social-icon:hover {
+                      background: #FC7D07;
+                      color: white;
+                      transform: translateY(-3px);
+                  }
+                   /* Gradient Overlay for Text Readability */
+                   .bg-gradient-brand {
+                       background: linear-gradient(to top, rgba(0, 60, 135, 0.9) 0%, rgba(0, 0, 0, 0) 70%);
+                       transition: all 0.4s ease;
+                   }
+        
+                   /* Modern Glass Badge */
+                   .glass-badge {
+                       background: rgba(255, 255, 255, 0.2);
+                       backdrop-filter: blur(10px);
+                       -webkit-backdrop-filter: blur(10px);
+                       border: 1px solid rgba(255, 255, 255, 0.3);
+                       font-size: 0.8rem;
+                   }
+        
+                   /* Brand Button */
+                   .btn-brand-orange {
+                       background-color: #FC7D07;
+                       color: white;
+                       border: none;
+                       font-weight: 600;
+                       transition: 0.3s;
+                   }
+        
+                   .btn-brand-orange:hover {
+                       background-color: #e06e05;
+                       transform: scale(1.05);
+                       color: white;
+                   }
+        
+                   /* Image Zoom Effects */
+                   .zoom-img {
+                       transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+                   }
+        
+                   .card:hover .zoom-img {
+                       transform: scale(1.1);
+                   }
+        
+                   .card:hover .bg-gradient-brand {
+                       background: linear-gradient(to top, rgba(252, 125, 7, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
+                   }
+        
+                   .x-small {
+                       font-size: 0.75rem;
+                   }
+        
+                   /* Responsive Adjustments */
+                   @media (max-width: 768px) {
+                       .featured-dorm-card img {
+                           min-height: 300px !important;
+                       }
+                   }
+                                         .btn:hover {
+                                             background-color: #FC7D07 !important;
+                                             transform: translateY(-2px);
+                                         }
+                    
+                                         .form-control:focus {
+                                             background-color: #fff !important;
+                                             box-shadow: 0 0 0 0.25rem rgba(0, 60, 135, 0.1);
+                                             border: 1px solid #003C87 !important;
+                                         }
+                                                                 .accordion-button:not(.collapsed) {
+                                                                     color: #003C87;
+                                                                     background-color: #fff;
+                                                                     box-shadow: none;
+                                                                 }
+                                
+                                                                 .accordion-button:focus {
+                                                                     box-shadow: none;
+                                                                     border-color: rgba(0, 60, 135, 0.1);
+                                                                 }
+                                
+                                                                 .accordion-button::after {
+                                                                     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23003C87'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+                                                                 }
+                                
+                                                                 .accordion-item:hover {
+                                                                     transform: translateY(-2px);
+                                                                     transition: all 0.3s ease;
+                                                                 }
+                      .auth-btn-primary:hover {
+                  background-color: #FC7D07 !important;
+        transform: translateY(-1px);
+                                 }

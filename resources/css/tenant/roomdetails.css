@@ -1,0 +1,265 @@
+/* Landlord Card Specifics */
+.landlord-profile-card {
+    transition: all 0.3s ease;
+}
+
+.avatar-wrapper {
+    position: relative;
+    flex-shrink: 0;
+}
+
+.landlord-avatar {
+    width: 60px;
+    height: 60px;
+    border: 2px solid #e9ecef;
+}
+
+.verified-check {
+    position: absolute;
+    bottom: 2px;
+    right: 2px;
+    color: #003C87;
+    background: white;
+    border-radius: 50%;
+    line-height: 1;
+    font-size: 1.1rem;
+}
+
+/* Button Styling (DormDash Green/Blue vibe) */
+.btn-dash-message {
+    background-color: #198754;
+    /* Success Green */
+    color: white;
+    border: none;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.btn-dash-message:hover {
+    background-color: #157347;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(25, 135, 84, 0.2);
+}
+
+.bg-blue-soft {
+    background-color: rgba(0, 60, 135, 0.08);
+}
+
+.text-dash-blue {
+    color: #003C87;
+}
+
+/* Responsive Fix */
+@media (max-width: 768px) {
+    .landlord-avatar {
+        width: 50px;
+        height: 50px;
+    }
+
+    .btn-dash-message {
+        width: 100%;
+        justify-content: center;
+    }
+}
+/* Typography & Spacing */
+.ls-1 {
+    letter-spacing: 1px;
+    font-size: 0.75rem;
+}
+
+.fw-black {
+    font-weight: 900;
+}
+
+/* Cards & Containers */
+.modern-card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border: 1px solid #f0f0f0 !important;
+}
+
+.contact-card {
+    background: linear-gradient(135deg, #003C87 0%, #0056b3 100%);
+}
+
+.icon-circle {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+/* Gallery & Images */
+.transition-img {
+    transition: transform 0.5s ease;
+}
+
+.main-image-wrapper:hover .transition-img {
+    transform: scale(1.03);
+}
+
+.glass-effect {
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(8px);
+}
+
+.active-thumb {
+    transform: translateY(-3px);
+    border-color: #003C87 !important;
+}
+
+.border-transparent {
+    border: 2px solid transparent;
+}
+
+/* Utilities */
+.custom-scrollbar::-webkit-scrollbar {
+    height: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #ddd;
+    border-radius: 10px;
+}
+
+.transition-btn:hover {
+    background-color: #212529;
+    color: white;
+}
+/* Color Utility for Orange */
+.text-orange {
+    color: #fd7e14 !important;
+}
+
+/* Selected State for List Items */
+.selected-issue-item {
+    background: #003C87 !important; /* Solid Blue */
+    transform: translateX(5px);
+    box-shadow: 0 8px 15px rgba(13, 110, 253, 0.2) !important;
+}
+
+/* Transition for smooth selection */
+.transition-all {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.list-group-item-action:hover:not(.selected-issue-item) {
+    background-color: #f1f5f9 !important;
+    transform: translateY(-2px);
+}
+
+/* Custom Close Button for premium feel */
+.btn-close:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+/* Disabled State for custom-btn */
+.custom-btn:disabled {
+    background: #cbd5e1;
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+}
+/* --- Modal Custom Overlay --- */
+.modal.show.d-block {
+    background-color: rgba(15, 23, 42, 0.5) !important;
+    backdrop-filter: blur(4px);
+}
+
+/* --- Transition Effects --- */
+.transition-all {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.fade-in {
+    animation: fadeIn 0.4s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* --- Payment Option Cards --- */
+.border-primary {
+    border-color: #003C87 !important;
+    border-width: 2px !important;
+}
+
+.text-primary {
+    color: #003C87 !important;
+}
+
+.text-secondary {
+    color: #64748b !important;
+}
+
+/* --- Upload Box Styles --- */
+.border-dashed {
+    border-style: dashed !important;
+    border-width: 2px !important;
+}
+
+.border-dashed:hover {
+    border-color: #003C87 !important;
+    background-color: #eff6ff !important;
+}
+
+/* --- Utility for Orange Highlight --- */
+.text-orange {
+    color: #fd7e14 !important;
+}
+
+/* --- Custom Letter Spacing --- */
+.letter-spacing-1 {
+    letter-spacing: 1px;
+}
+
+/* --- Small Text Utilities --- */
+.x-small {
+    font-size: 0.75rem;
+}
+
+/* --- Modal Close Button White --- */
+.btn-close-white {
+    filter: invert(1) grayscale(100%) brightness(200%);
+}
+
+/* --- Button Hover Effects --- */
+.btn:hover {
+    filter: brightness(1.1);
+    transform: translateY(-1px);
+}
+
+.btn:active {
+    transform: translateY(0);
+}
+
+/* --- Image Preview Styling --- */
+.rounded-4 {
+    border-radius: 1rem !important;
+}
+
+.rounded-3 {
+    border-radius: 0.75rem !important;
+}
+
+/* --- Shadow for Premium Look --- */
+.shadow-sm {
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05) !important;
+}
+
+.shadow-lg {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
+}

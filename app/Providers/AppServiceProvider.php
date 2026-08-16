@@ -1,0 +1,38 @@
+<?php
+
+namespace App\Providers;
+
+use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\Facades\View;
+use Illuminate\Support\Facades\URL;
+use App\Models\tenant\tenantModel;
+use App\Models\landlord\landlordModel;
+use Illuminate\Database\Eloquent\Relations\Relation;
+
+class AppServiceProvider extends ServiceProvider
+{
+    /**
+     * Register any application services.
+     */
+    public function register(): void
+    {
+        //
+    }
+
+    /**
+     * Bootstrap any application services.
+     */
+    public function boot(): void
+    {
+        // Force HTTPS in production
+        if (config('app.env') === 'production') {
+            URL::forceScheme('https');
+        }
+
+        // Morph map
+        Relation::morphMap([
+            'tenant' => tenantModel::class,
+            'landlord' => landlordModel::class,
+        ]);
+    }
+}

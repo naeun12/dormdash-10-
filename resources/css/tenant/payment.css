@@ -1,0 +1,125 @@
+/* Solid Blue: #003C87 | Solid Orange: #fd7e14 */
+
+.bg-solid-blue {
+    background-color: #003C87;
+}
+
+.bg-solid-orange {
+    background-color: #fd7e14;
+}
+
+.bg-light-gray {
+    background-color: #f8f9fa;
+}
+
+.text-orange {
+    color: #fd7e14;
+}
+
+/* Scroll Area */
+.history-scroll-container {
+    max-height: 600px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #003C87 #f1f1f1;
+}
+
+/* History Items */
+.payment-item-card {
+    background: white;
+    border: 1px solid #edf2f7;
+    border-radius: 20px;
+    transition: all 0.2s ease;
+}
+
+.payment-item-card:hover {
+    transform: scale(1.01);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    border-color: #003C87;
+}
+
+/* Icons */
+.icon-circle {
+    width: 45px;
+    height: 45px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+
+.bg-soft-blue {
+    background-color: #e7f1ff;
+}
+
+.bg-soft-orange {
+    background-color: #fff5ed;
+}
+
+/* Custom Badges */
+.badge-custom {
+    padding: 6px 16px;
+    border-radius: 50px;
+    font-size: 0.75rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.badge-custom.online {
+    background: #e7f1ff;
+    color: #003C87;
+}
+
+.badge-custom.onsite {
+    background: #fff5ed;
+    color: #fd7e14;
+}
+
+/* Summary Right Column */
+.total-amount-card {
+    background-color: #f8fbff;
+    border: 2px solid #e7f1ff;
+}
+
+.method-option {
+    cursor: pointer;
+    transition: 0.2s;
+    border-color: #dee2e6;
+    color: #6c757d;
+}
+
+.method-option:hover {
+    background-color: #f8f9fa;
+}
+
+.method-option.active {
+    border-color: #003C87;
+    background-color: #f0f7ff;
+    color: #003C87;
+}
+
+/* Utility */
+.fw-black {
+    font-weight: 900;
+}
+
+.shadow-inner {
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+@media (max-width: 991px) {
+    .payment-item-card {
+        flex-direction: column;
+        align-items: flex-start !important;
+        gap: 1rem;
+    }
+
+    .text-end {
+        text-align: left !important;
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+

@@ -1,0 +1,322 @@
+/* ============================================================
+   DORMDASH MODERN UI COMPONENTS
+   Colors: Blue (#003C87) | Orange (#fd7e14)
+   ============================================================ */
+
+/* --- Modern Button Design --- */
+.custom-btn {
+    background: #003C87;
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 12px 28px;
+    border-radius: 16px;
+    /* Squircle style */
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    box-shadow: 0 4px 6px -1px rgba(13, 110, 253, 0.2);
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.custom-btn:hover {
+    background: #003C87;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px -5px rgba(13, 110, 253, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.custom-btn:active {
+    transform: translateY(0);
+}
+
+.custom-btn i {
+    transition: transform 0.3s ease;
+}
+
+.custom-btn:hover i {
+    transform: translateX(3px);
+}
+
+/* --- Empty State Container --- */
+.empty-state-container {
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    border-radius: 32px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.03);
+    position: relative;
+    overflow: hidden;
+    padding: 40px;
+    text-align: center;
+}
+
+.empty-state-container::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(253, 126, 20, 0.05) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+.empty-icon-wrapper {
+    width: 80px;
+    height: 80px;
+    background: #fff7ed;
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 24px;
+    color: #fd7e14;
+    border: 1px solid #ffedd5;
+}
+
+.empty-title {
+    color: #1e293b;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+}
+
+.empty-text {
+    color: #64748b;
+    max-width: 400px;
+    margin: 0 auto 20px;
+    line-height: 1.6;
+}
+
+/* --- Profile & Typography --- */
+.tenant-name {
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    color: #1e293b;
+}
+
+.modern-profile-card {
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.04);
+    border-radius: 28px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.modern-profile-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.06);
+}
+
+.profile-avatar-wrapper {
+    position: relative;
+    display: inline-block;
+    padding: 5px;
+    background: linear-gradient(135deg, #e0f2fe 0%, #003C87 100%);
+    border-radius: 50%;
+}
+
+.profile-avatar-img {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+}
+
+.status-dot {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    width: 20px;
+    height: 20px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    background-color: #fd7e14;
+    /* Orange Status */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* --- List Groups --- */
+.modern-list-group {
+    background: #f8fafc;
+    border-radius: 20px;
+    padding: 15px;
+    border: 1px solid #f1f5f9;
+}
+
+.modern-list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.modern-list-item:last-child {
+    border-bottom: none;
+}
+
+.modern-list-label {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #64748b;
+    font-weight: 600;
+}
+
+.modern-list-value {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #1e293b;
+}
+
+/* --- Room Card --- */
+.modern-room-card {
+    border-radius: 24px;
+    overflow: hidden;
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.04);
+}
+
+.room-price-float {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(5px);
+    padding: 6px 14px;
+    border-radius: 12px;
+    font-weight: 800;
+    color: #fd7e14;
+    /* Orange Price */
+    box-shadow: 0 4px 12px rgba(253, 126, 20, 0.15);
+    border: 1px solid rgba(253, 126, 20, 0.1);
+}
+
+.room-info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    padding: 15px;
+    background: #f8fafc;
+    border-radius: 18px;
+}
+
+/* --- Rating & Feedback --- */
+.star-rating-container {
+    background: #fff7ed;
+    /* Light Orange Tint */
+    border: 1px solid #ffedd5;
+    border-radius: 20px;
+    padding: 20px 10px;
+}
+
+.interactive-star {
+    transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.interactive-star:hover {
+    transform: scale(1.3);
+}
+
+.text-warning {
+    color: #fd7e14 !important;
+    /* Force Orange Stars */
+}
+
+.modern-textarea {
+    border-radius: 14px;
+    border: 1px solid #e2e8f0;
+    padding: 12px;
+    font-size: 0.9rem;
+    resize: none;
+}
+
+.modern-textarea:focus {
+    border-color: #003C87;
+    box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.1);
+}
+
+/* --- Lease & Timeline --- */
+.modern-lease-card {
+    border-radius: 24px;
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.lease-timeline {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+.timeline-line {
+    position: absolute;
+    top: 32px;
+    left: 10%;
+    right: 10%;
+    height: 4px;
+    background: #e2e8f0;
+    border-radius: 2px;
+}
+
+.point-date.text-danger {
+    color: #fd7e14 !important;
+    /* End Date Orange */
+}
+
+.choice-container {
+    background: #f8fafc;
+    border-radius: 20px;
+    padding: 20px;
+    border: 1px dashed #003C87;
+}
+
+.btn-choice-extend {
+    background: #003C87;
+    color: white;
+    border-radius: 12px;
+    padding: 10px 20px;
+    font-weight: 700;
+    border: none;
+}
+
+.btn-choice-decline {
+    background: #fd7e14;
+    color: white;
+    border-radius: 12px;
+    padding: 10px 20px;
+    font-weight: 700;
+    border: none;
+}
+
+.extension-info-box {
+    background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+    border-radius: 18px;
+    border-left: 5px solid #003C87;
+    padding: 15px;
+}
+
+/* --- Global Utilities --- */
+.btn-dormdash-blue {
+    background: #003C87;
+    color: white;
+    border-radius: 14px;
+    padding: 12px 24px;
+    font-weight: 600;
+    border: none;
+    transition: 0.3s;
+}
+
+.btn-dormdash-blue:hover {
+    background: #003C87;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(13, 110, 253, 0.2);
+}

@@ -1,0 +1,102 @@
+.booking-container {
+    background-color: #fdfdfd;
+}
+
+.header-line {
+    width: 80px;
+    height: 5px;
+    background: linear-gradient(to right, #4edce2, #ff8c00);
+    border-radius: 10px;
+}
+
+/* Card General Styling */
+.booking-card {
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    border: 1px solid #eee;
+}
+
+.section-title {
+    color: #2c3e50;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+}
+
+.text-orange {
+    color: #ff8c00 !important;
+}
+
+/* Info Boxes (Blue Borders) */
+.info-box {
+    padding: 14px;
+    background-color: #f8fefeff;
+    border-radius: 12px;
+    font-weight: 600;
+    color: #444;
+}
+
+.border-blue {
+    border: 2px solid #4edce2;
+}
+
+.custom-label {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #888;
+    margin-bottom: 6px;
+    margin-left: 4px;
+    display: block;
+}
+
+/* Room Summary (Orange Background) */
+.room-summary-box {
+    background: linear-gradient(135deg, #ff8c00 0%, #ffae42 100%);
+    box-shadow: 0 8px 20px rgba(255, 140, 0, 0.2);
+}
+
+.border-orange-light {
+    border-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+/* Form Inputs */
+.custom-input {
+    border: 2px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 12px;
+    transition: all 0.3s ease;
+}
+
+.input-focus-orange:focus {
+    border-color: #ff8c00;
+    box-shadow: 0 0 0 0.25rem rgba(255, 140, 0, 0.1);
+}
+
+/* Submit Button */
+.btn-book-now {
+    background-color: #2c3e50;
+    /* Dark blue/slate for contrast */
+    border: none;
+    color: #fff;
+    font-weight: 700;
+    border-radius: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.btn-book-now:hover {
+    background-color: #ff8c00;
+    /* Turns Orange on hover */
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(255, 140, 0, 0.3);
+    color: white;
+}
+
+@media (max-width: 991px) {
+    .booking-card {
+        margin-bottom: 1.5rem;
+    }
+}

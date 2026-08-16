@@ -1,0 +1,100 @@
+:root {
+    --primary-blue: #003C87;
+    --accent-orange: #FC7D07;
+    --white: #FFFFFF;
+    --label-color: rgba(255, 255, 255, 0.4);
+}
+
+.sidebar-modern {
+    background-color: var(--primary-blue);
+    min-height: 100vh;
+    padding: 0;
+    position: sticky;
+    top: 0;
+    box-shadow: 4px 0 15px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+/* SECTION LABELS */
+.nav-label {
+    font-size: 0.65rem;
+    font-weight: 800;
+    color: var(--label-color);
+    letter-spacing: 1.2px;
+    padding-left: 18px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.logo-container {
+    background: white;
+    padding: 5px;
+    border-radius: 10px;
+    display: inline-flex;
+}
+
+.nav-link-modern {
+    color: rgba(255, 255, 255, 0.8) !important;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 16px;
+    border-radius: 10px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.nav-link-modern i {
+    font-size: 1.1rem;
+    color: var(--accent-orange);
+}
+
+.nav-link-modern:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #FFFFFF !important;
+    transform: translateX(4px);
+}
+
+/* ACTIVE STATE */
+.active-item {
+    background-color: var(--accent-orange) !important;
+    color: white !important;
+    box-shadow: 0 4px 12px rgba(252, 125, 7, 0.3);
+}
+
+.active-item i {
+    color: white !important;
+}
+
+/* SUBMENU */
+.sub-link {
+    color: rgba(255, 255, 255, 0.6) !important;
+    text-decoration: none;
+    font-size: 0.85rem;
+    padding: 6px 16px;
+    display: block;
+    border-radius: 6px;
+    transition: 0.2s;
+}
+
+.sub-link:hover,
+.sub-active {
+    color: var(--accent-orange) !important;
+}
+
+/* VERIFICATION FOOTER */
+.verification-badge {
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #4ade80 !important;
+    /* Modern Emerald/Green */
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}

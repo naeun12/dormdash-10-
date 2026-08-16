@@ -1,0 +1,134 @@
+/* Glassmorphism Overlay */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(15, 23, 42, 0.7);
+    backdrop-filter: blur(8px);
+    z-index: 2000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.premium-confirm-card {
+    background: #ffffff;
+    border-radius: 24px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    position: relative;
+    overflow: hidden;
+}
+
+.fw-800 {
+    font-weight: 800;
+}
+
+/* Icon Styling */
+.icon-wrapper {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    margin: 0 auto;
+}
+
+.icon-primary {
+    background: #eff6ff;
+    color: #003C87;
+}
+
+.icon-danger {
+    background: #fef2f2;
+    color: #ef4444;
+}
+
+/* Close Button */
+.btn-close-custom {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    border: none;
+    background: #f1f5f9;
+    width: 30px;
+    height: 30px;
+    border-radius: 8px;
+    color: #64748b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s;
+}
+
+.btn-close-custom:hover {
+    background: #e2e8f0;
+    color: #1e293b;
+}
+
+/* Button Styles */
+.btn-modern-secondary {
+    background: #f8fafc;
+    color: #64748b;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 12px;
+    font-weight: 700;
+    transition: 0.2s;
+}
+
+.btn-modern-secondary:hover {
+    background: #f1f5f9;
+    color: #1e293b;
+}
+
+.btn-modern-action {
+    border: none;
+    border-radius: 12px;
+    padding: 12px;
+    font-weight: 700;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    color: white;
+}
+
+.btn-primary-action {
+    background: #003C87;
+    box-shadow: 0 4px 12px rgba(0, 60, 135, 0.2);
+}
+
+.btn-primary-action:hover {
+    background: #002d61;
+    transform: translateY(-2px);
+}
+
+.btn-danger-action {
+    background: #ef4444;
+    box-shadow: 0 4px 12px rgba(239, 68, 68, 0.2);
+}
+
+.btn-danger-action:hover {
+    background: #dc2626;
+    transform: translateY(-2px);
+}
+
+/* Animation */
+.modal-dialog {
+    animation: modal-pop 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+@keyframes modal-pop {
+    0% {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}

@@ -1,0 +1,352 @@
+/* --- Search Bar Focus Effect (Revised to Brand Orange) --- */
+.search-container {
+    border: 2px solid #f8f9fa !important;
+    transition: all 0.3s ease;
+}
+
+.search-container:focus-within {
+    border-color: #FC7D07 !important;
+    /* Brand Orange */
+    background-color: #fff !important;
+    box-shadow: 0 4px 12px rgba(252, 125, 7, 0.15) !important;
+}
+
+/* --- Search Wrapper (Modal/Other Sections) --- */
+.search-wrapper {
+    border: 1.5px solid #dee2e6;
+    transition: all 0.2s ease;
+}
+
+.search-wrapper:focus-within {
+    border-color: #FC7D07;
+    /* Brand Orange */
+    box-shadow: 0 4px 10px rgba(252, 125, 7, 0.1) !important;
+}
+
+/* --- General Action Buttons Styling --- */
+.btn-action {
+    font-size: 0.85rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-action:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Specific Action Colors */
+.btn-move-in {
+    background-color: #198754;
+    /* Success Green */
+    color: white;
+}
+
+.btn-report {
+    background-color: #003C87;
+    /* Brand Blue */
+    color: white;
+}
+
+.btn-payment {
+    background-color: #FC7D07;
+    /* Brand Orange */
+    color: white;
+}
+
+/* --- Empty State --- */
+.empty-state {
+    transition: transform 0.3s ease;
+    animation: fadeIn 0.4s ease-out;
+}
+
+.empty-state:hover {
+    transform: translateY(-3px);
+}
+
+.icon-circle {
+    width: 100px;
+    height: 100px;
+    background-color: #f8f9fa;
+    border-radius: 50%;
+    border: 2px dashed #dee2e6;
+}
+
+/* --- Pagination (Revised with Orange Active State) --- */
+.pagination-custom .page-item {
+    background: white;
+    border-radius: 50rem;
+    transition: transform 0.2s ease;
+}
+
+.pagination-custom .page-link {
+    color: #003C87;
+    /* Brand Blue */
+    background-color: white;
+    font-size: 0.85rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 38px;
+    height: 38px;
+}
+
+.pagination-custom .page-item:not(.active):not(.disabled):hover {
+    transform: translateY(-2px);
+}
+
+.pagination-custom .page-item:not(.active):not(.disabled) .page-link:hover {
+    background-color: #fff3e6;
+    /* Very light orange tint */
+    color: #FC7D07;
+    /* Brand Orange */
+}
+
+.pagination-custom .page-item.active {
+    transform: scale(1.1);
+    z-index: 3;
+}
+
+.pagination-custom .page-item.active .page-link {
+    background-color: #FC7D07 !important;
+    /* Brand Orange for Active */
+    color: white !important;
+    box-shadow: 0 4px 10px rgba(252, 125, 7, 0.3);
+}
+
+/* --- Tenant Row & Interaction --- */
+.hover-bg:hover {
+    background-color: #f8fbff;
+}
+
+.btn-view {
+    background-color: #003C87;
+    /* Brand Blue */
+    color: white;
+}
+
+.btn-view:hover {
+    background-color: #002d66;
+    transform: scale(1.1);
+}
+
+.btn-delete {
+    background-color: #fff0f0;
+    color: #e03131;
+}
+
+.btn-delete:hover {
+    background-color: #fae3e3;
+    color: #c92a2a;
+    transform: scale(1.1);
+}
+
+/* --- Status Badges --- */
+.status-active {
+    background-color: #e6fcf5;
+    color: #0ca678;
+    border-color: #c3fae8;
+}
+
+.status-moved-out {
+    background-color: #f8f9fa;
+    color: #495057;
+    border-color: #dee2e6;
+}
+
+.status-pending {
+    background-color: #fff9db;
+    color: #f08c00;
+    border-color: #fff3bf;
+}
+
+.status-transfer {
+    background-color: #e7f5ff;
+    color: #1c7ed6;
+    border-color: #d0ebff;
+}
+
+/* --- Animations & Utilities --- */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.transition-all {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.text-truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+/* Custom Styles for Mobile Labels */
+.uppercase-label {
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 700;
+}
+
+/* Card Styling for Mobile */
+.card {
+    transition: transform 0.2s ease;
+}
+
+/* Specific color for Room Number in Desktop */
+.text-primary {
+    color: #003C87 !important;
+}
+
+/* Highlight Orange for Room label or accent */
+.accent-orange {
+    color: #FC7D07 !important;
+}
+.header-gradient {
+    /* Main Brand Blue with a subtle gradient */
+    background: linear-gradient(90deg, #003C87 0%, #002d66 100%);
+    /* Brand Orange bottom border for a modern accent */
+    border-bottom: 3px solid #FC7D07;
+    letter-spacing: 0.5px;
+}
+
+.small-caps {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+/* Optional: Subtle icon opacity for a cleaner look */
+.header-gradient i {
+    opacity: 0.8;
+    font-size: 0.9rem;
+}
+/* Custom Modal Styling */
+.color-orange {
+    color: #FC7D07;
+}
+
+.border-orange-focus:focus {
+    border-color: #FC7D07;
+    box-shadow: 0 0 0 0.25rem rgba(252, 125, 7, 0.1);
+}
+
+.btn-orange-action {
+    background-color: #FC7D07;
+    color: white;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.btn-orange-action:hover {
+    background-color: #e66e00;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(252, 125, 7, 0.3);
+}
+
+.btn-primary-action {
+    background-color: #003C87;
+    color: white;
+    border: none;
+}
+
+.btn-primary-action:hover {
+    background-color: #002d66;
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* Section Title Styling */
+.border-end-md {
+    border-right: 1px solid #eee;
+}
+
+@media (max-width: 768px) {
+    .border-end-md {
+        border-right: none;
+    }
+}
+
+.tiny {
+    font-size: 0.75rem;
+}
+
+.uppercase-label {
+    letter-spacing: 1px;
+}
+/* Custom Styles for Modern Modal */
+.rounded-5 {
+    border-radius: 2rem !important;
+}
+
+.shadow-2xl {
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25) !important;
+}
+
+/* Avatar Circle */
+.avatar-circle {
+    width: 48px;
+    height: 48px;
+    background: #002d66;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 14px;
+    font-weight: 800;
+    font-size: 1.1rem;
+}
+
+/* Border Dashed Utility */
+.border-dashed {
+    border: 2px dashed #e2e8f0 !important;
+}
+
+/* Typography & Effects */
+.fw-black {
+    font-weight: 900;
+}
+
+.letter-spacing-1 {
+    letter-spacing: 0.5px;
+}
+
+/* Animation */
+.fade-in {
+    animation: fadeInModal 0.4s ease-out;
+}
+
+@keyframes fadeInModal {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Input Focus */
+.form-control:focus {
+    border-color: #002d66;
+    box-shadow: 0 0 0 4px rgba(13, 110, 253, 0.1);
+}
+
+/* Glassmorphism Icon Box */
+.bg-opacity-20 {
+    background-color: rgba(255, 255, 255, 0.2) !important;
+}
